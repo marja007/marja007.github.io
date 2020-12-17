@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Autot</title>
+<!-- 
+Näytä usean auton tiedot
+ -->
+</head>
+
+<body> 
+	<h3>Auto</h3>
+
+	<div id="vastaus"></div>
+
+	<script>
+	var autot = [
+		{
+			"rekisterinro" : "XYZ-123",
+			"omistaja": "Risto Reipas",
+			"merkki": "Aston",
+			"malli" : "Martin",
+			"vuosimalli": 1964,
+			"katsastettu": [{"paikka": "Lohja", "vuosi": 2019} ]
+		},
+		{
+			"rekisterinro" : "AAA-222",
+			"omistaja": "Matti Mainio",
+			"merkki": "Morris",
+			"malli" : "Mini",
+			"vuosimalli": 2015,
+			"katsastettu": [{"paikka": "Lohja", "vuosi": 2018}]
+		},
+		{
+			"rekisterinro" : "CC-222",
+			"omistaja": "Liisa Mainio",
+			"merkki": "Morris",
+			"malli" : "Mini",
+			"vuosimalli": 2016,
+			"katsastettu": [ {"paikka": "Lohja", "vuosi": 2017} ]
+		}		
+	];
+	
+	function listaa() {
+		var teksti = ""; 
+	
+		// Käydään koko taulukko läpi kooten tiedot teksti-muuttujaan
+		for (var i=0; i < autot.length; i++ ) {		
+			teksti = teksti + "<p>Nimi: " + autot[i].omistaja + "<br>";
+			teksti = teksti + "Rekno: " + autot[i].rekisterinro + "<br>";
+			teksti = teksti + "Auto: " + autot[i].merkki + " " + autot[i].malli + "<br>";
+			teksti = teksti + "Vuosimalli: " + autot[i].vuosimalli + "<br>"; 
+			teksti= teksti + "Katsastus: " + autot[i].katsastettu[0].paikka +  " " +
+			        autot[i].katsastettu[0].vuosi + "</p>";
+		}
+		// Vastauksen kirjoittaminen html-sivulle
+		document.getElementById("vastaus").innerHTML = teksti;
+	}
+
+	listaa();
+	</script>
+</body>
+</html>
