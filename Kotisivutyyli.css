@@ -149,7 +149,7 @@ margin: auto;
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-body, .card-body{
+body{
     background-image: url(./kuvat/kirsikka.jpg) !important;
     background-repeat: no-repeat;
   background-attachment: fixed; 
@@ -232,3 +232,8 @@ body, .card-body{
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
+.card-body, .card-header{
+    font-family: 'Lobster', cursive;
+    background-color: rgba(8, 8, 8, 0.8);
+}
+    
