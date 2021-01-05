@@ -232,8 +232,8 @@ body{
         box-shadow: 0 5px #666;
         transform: translateY(4px);
       }
-.card-body, .card-header{
+.card-body, .card-header .card-img-top{
     font-family: 'Lobster', cursive;
-    background-color: rgba(8, 8, 8, 0.8);
+    background-color: #fca3ccb0;
 }
     
