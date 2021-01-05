@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Kukkien ihailulle</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+  body{
+    background-color: rgba(219, 244, 179, 0.331);
+    
+  }
+  #kolme{
+  background-image: url(./kuvat/kirsikka.jpg) !important;
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  }
+  #loppu{
+    background-image: url(./kuvat/kirsikka.jpg);
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+}
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 300px;
+  height: 300px;
+}
+  </style>
+  <script>
+    function imageZoom(imgID, resultID) {
+      var img, lens, result, cx, cy;
+      img = document.getElementById(imgID);
+      result = document.getElementById(resultID);
+      /*create lens:*/
+      lens = document.createElement("DIV");
+      lens.setAttribute("class", "img-zoom-lens");
+      /*insert lens:*/
+      img.parentElement.insertBefore(lens, img);
+      /*calculate the ratio between result DIV and lens:*/
+      cx = result.offsetWidth / lens.offsetWidth;
+      cy = result.offsetHeight / lens.offsetHeight;
+      /*set background properties for the result DIV:*/
+      result.style.backgroundImage = "url('" + img.src + "')";
+      result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+      /*execute a function when someone moves the cursor over the image, or the lens:*/
+      lens.addEventListener("mousemove", moveLens);
+      img.addEventListener("mousemove", moveLens);
+      /*and also for touch screens:*/
+      lens.addEventListener("touchmove", moveLens);
+      img.addEventListener("touchmove", moveLens);
+      function moveLens(e) {
+        var pos, x, y;
+        /*prevent any other actions that may occur when moving over the image:*/
+        e.preventDefault();
+        /*get the cursor's x and y positions:*/
+        pos = getCursorPos(e);
+        /*calculate the position of the lens:*/
+        x = pos.x - (lens.offsetWidth / 2);
+        y = pos.y - (lens.offsetHeight / 2);
+        /*prevent the lens from being positioned outside the image:*/
+        if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+        if (x < 0) {x = 0;}
+        if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+        if (y < 0) {y = 0;}
+        /*set the position of the lens:*/
+        lens.style.left = x + "px";
+        lens.style.top = y + "px";
+        /*display what the lens "sees":*/
+        result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+      }
+      function getCursorPos(e) {
+        var a, x = 0, y = 0;
+        e = e || window.event;
+        /*get the x and y positions of the image:*/
+        a = img.getBoundingClientRect();
+        /*calculate the cursor's x and y coordinates, relative to the image:*/
+        x = e.pageX - a.left;
+        y = e.pageY - a.top;
+        /*consider any page scrolling:*/
+        x = x - window.pageXOffset;
+        y = y - window.pageYOffset;
+        return {x : x, y : y};
+      }
+    }
+    </script>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0" id="kolme">
+  <h1>Gerberoiden valtakunta</h1>
+  <p></p> 
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Tästä kukkien etusivulle</a>
+  <a class="nav-link" href="Kotisivut2.html">Tästä Marjan etusivulle</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="ruusut.html">Ruusut</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="gerberat.html">Gerberat</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://fi.wikipedia.org/wiki/Kukka">Kukat Wikipediassa</a>
+      </li>    
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Kukkia</h2>
+      <h5>Lempikukkani</h5>
+      <div class="img">
+          <img src="./kuvat/ruusu.jpg" width="100%" max-height="300px" margin="auto" alt="sininen ruusu">
+        </div>
+      <p>Kukat ovat kauniita ja niitä kannattaa nuuskia</p>
+      <h3>Gerbera linkkejä</h3>
+      <p>Ostoksia ja tietoa</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.plantagen.fi/gerbera.html">Plantagen</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://fi.wikipedia.org/wiki/Gerberat">Wikipedia</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.kukkatalo.fi/tuote/gerbera/">Kukkatalo</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2>Lisää kauniita gerberoita</h2>
+      <h5></h5>
+      <div class="img-zoom-container">
+      <div class="img"><img id="myimage" img src="./kuvat/gerbera2.jpg" width="100%" max-height="300px" margin="auto" alt="gerbera"></div>
+      <p>Gerberoita on vaikka minkä värisiä, katso vaikka tarkemmin</p>
+      <p></p>
+      <div id="myresult" class="img-zoom-result"></div>
+      </div>
+      <script>
+        // Initiate zoom effect:
+        imageZoom("myimage", "myresult");
+        </script>
+      <br>
+      <h2>Gerberat</h2>
+      <h5>Kauniita pinkin sävyjä</h5>
+      <div class="img"><img src="./kuvat/gerbera3.jpg" width="100%" max-height="300px" margin="auto" alt="gerbera"></div>
+      <p>Myös gerberat ovat kauniita</p>
+      <p>Voit lukea lisää gerberoista sivupalkin linkistä</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0" id="loppu">
+  <p>&#127804</p>
+</div>
+
+  
+  
+</body>
+</html>
+
