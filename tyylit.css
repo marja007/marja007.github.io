@@ -1,0 +1,225 @@
+/* Taulun muotoilut */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;    
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  /* Bodyn muotoilut */
+  body{
+      text-align: center;
+      background-image: url(./kuvat/tausta.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Lobster', cursive;
+  }
+  /* Yläosan muotoilut */
+  #alku{
+    padding: 30px;
+    font-size: 60px;
+  }
+   /* Karusellin muotoilut */
+  #demo{
+    padding: 10px
+  }
+  /* Karusellin kuvien muotoilut */
+  .carousel-inner img {
+    width: 80%;
+    height: 80%; 
+  }
+  /* Kuvalinkin muotoilut */
+  #Jaajolinkki{
+    border-radius: 25px;
+    background: #4dddf7;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+  }
+  /* Linkkien muotoilut */
+  a:link {
+    color: rgba(255, 0, 179, 0.884);
+  }
+  .nav-link, .nav-item{
+    color: rgba(255, 0, 179, 0.884) !important;
+  }
+  /* visited link */
+  a:visited{
+    color: rgb(45, 123, 241);
+  }
+  /* mouse over link */
+  a:hover, .nav-link:hover {
+    color: rgb(250, 250, 250) !important;
+  }
+ 
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+  /* Footerin kinnitys ja muotoilut */
+  footer.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    border: 3px solid #0379c7;
+    background-color: aquamarine;
+    opacity: 30%;
+  }
+  footer:hover{
+    opacity: 100%;
+  }
+  /*Kuvien muotoilua*/
+  #nainen, #koira, #poika, #sumu, #herkkis{
+    border-radius: 50%;
+    padding: 30px;
+  }
+  #kartta{
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+  }
+  #areena{
+    width: 80%;
+    padding: 30px;
+    
+  }
+
+/* Vitos pipon kuvagallerian muotoilua*/
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .wrapper {
+  
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 10px;
+    overflow: hidden;
+    height: 100vh; 
+  }
+  
+    .gallery {
+      overflow: scroll;
+      scroll-snap-type: x mandatory;
+    }
+    
+  
+    .gallery__img {
+    scroll-snap-align: start;
+    margin-bottom: 10px;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+  .lil-nav {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .lil-nav a {
+    height: 200px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .lil-nav__img {
+    object-fit: cover;
+  }
+  .gallery {
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .lil-nav__img {
+    object-fit: cover;
+    filter: saturate(0);
+    transition: 0.3s ease all;
+  }
+  
+  .lil-nav__img:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
+  }
+
+  /*Popupin muotoilut*/
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+/*Pipo nelosen sheikkaus*/
+#shake:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}

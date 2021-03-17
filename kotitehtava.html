@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="tyylit.css">
+    <title>Kotitehtava</title>
+    </head>
+<body>
+<div>
+<h1 id="alku">Pipotus</h1>
+</div>
+<nav class= "navbar navbar-expand-sm bg-dark">
+<ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href=#perustiedot>Perustiedot</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href=./Tuotteet.html>Tuotteet</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href=./yhteystiedot.html >Yhteystiedot</a>
+</li>
+</ul>
+</nav>
+</div>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./kuvat/aurinkopipo.jpg" alt="Nainen metsässä pipo päässä" width="1100" height="500">
+        <div class="carousel-caption">
+            <h3>Aurinkoisia pipoja</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./kuvat/pipotakaa.jpg" alt="Sumuinen kuva miehestä pipo päässä"width="1100" height="500">
+        <div class="carousel-caption">
+            <h3>Sumuisia pipoja</h3>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./kuvat/tunnelmapipo.jpg" alt="Vakavailmeinen mies pipo päässä"width="1100" height="500">
+        <div class="carousel-caption">
+            <h3>Herkkiä pipoja</h3>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <!-- Linkki kuvassa -->
+<a href="https://www.etlehti.fi/artikkeli/osallistu/jaajo_on_alykkaan_nakoinen_ja_kiinnostava"><img src="./kuvat/pipotakaa.jpg" 
+    alt="Sumuinen kuva miehestä pipo päässä" id="Jaajolinkki"  class="mx-auto d-block">  </a>
+<h3 id="perustiedot">Perustiedot</h3>
+<p>
+    Pipojan on kaikenlaisia. Pipon tehtävä on pitää <a href= https://fi.wikipedia.org/wiki/P%C3%A4%C3%A4>pää</a> lämpimänä ja aivot virkeinä. 
+    Sää saattaa aiheuttaa joskus haasteita pipojen pitämiseen, mutta vannoutunein pipaisti pitää pipoa kesät talvet.
+
+</p>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4">
+  <li class="link"><a href="https://fi.wikipedia.org/wiki/Pipo">Pipot Wikipediassa</a></li></div>
+  <div class="col-sm-4">
+<li class="link"><a href="https://www.apu.fi/artikkelit/paahanpinttyma-eli-kaikki-mita-pipoista-pitaisi-tietaa-juuri-nyt">Pipoista Apu-lehdessä</a></li></div>
+<div class="col-sm-4">
+<li class="link"><a href="https://www.tiede.fi/artikkeli/kysy/miksi-pipossa-tupsu">Miksi pipoissa on tupsu?</a></li></div>
+</div>
+<img src="./kuvat/aurinkopipo.jpg" alt="Nainen metsässä pipo päässä" id="nainen" class="mx-auto d-block">
+</div>
+
+
+<div class="popup" style="font-size:30px;" onclick="myFunction()">Tästä vähän virvoketta
+  <span class="popuptext" style="font-size:100px;" id="myPopup">&#127864</span>
+</div>
+
+
+  <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
+</body>
+<footer class="fixed">
+  
+  Puhelinnumero 050-123 123 e-mail: pipotus@pipotus.fi
+</footer>
+
+</html>
