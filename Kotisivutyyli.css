@@ -1,35 +1,39 @@
-
+/* Navbar Custom Styles */
 .navbar-custom {
-  background-image: url(./kuvat/kirsikka.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover;
+    background-image: url(./kuvat/kirsikka.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text,
-.popup{
-    font-family: 'Lobster', cursive;
-    color: rgba(26, 4, 14, 0.8);
-}
-.navbar-custom .navbar-nav .nav-link {
-    font-family: 'Lobster', cursive;
-    color: rgba(8, 8, 8, 0.8);
-}
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text,
+    .popup {
+        font-family: 'Lobster', cursive;
+        color: rgba(26, 4, 14, 0.8);
+    }
 
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #f8b3f8;
-}
+    .navbar-custom .navbar-nav .nav-link {
+        font-family: 'Lobster', cursive;
+        color: rgba(8, 8, 8, 0.8);
+    }
+
+    .navbar-custom .nav-item.active .nav-link,
+    .navbar-custom .nav-item:hover .nav-link {
+        color: #f8b3f8;
+    }
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  }
+}
 
 .nav-item .dropdown-menu a:hover {
     color: rgb(250, 199, 235) !important;
     background: rgb(248, 98, 123) !important;
     cursor: pointer;
 }
+
+/* Carousel Image Styles */
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -37,75 +41,91 @@
 }
 
 .carousel-control-prev-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-}
-    
-.carousel-control-next-icon {
-background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
-#yleistä {
-        padding-top: 70px;
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
-th{
+
+/* General Page Padding */
+#yleistä {
+    padding-top: 70px;
+}
+
+/* Table Alignment */
+th {
     text-align: left;
 }
-td{
+
+td {
     padding-left: 3px;
 }
 
-p{
+/* Text Alignment */
+p, h3 {
     text-align: center;
-}
-h3{
-    text-align: center;
-}
-#demo {
-    width:100%; max-width: 600px; margin:auto;
 }
 
+/* Demo Section */
+#demo {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Carousel Image Styling */
 .carousel-inner img {
     object-fit: cover;
     width: 100% !important;
     max-height: 340px !important;
 }
 
+/* Navigation Tabs Active State */
 .nav-link.active {
     color: rgb(250, 173, 241) !important;
 }
 
-body { position: relative; 
+/* Body Styles */
+body {
+    position: relative;
+    text-align: center;
+    background-image: url(./kuvat/kirsikka.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.3; /* Background opacity */
+    z-index: -1; /* Background behind content */
 }
-/* Container for the tabs and video player */
+
+/* Container for Video and Tabs */
 .video-section {
     display: flex;
     flex-direction: row;
     width: 100%;
     max-width: 1000px; /* Maximum width for the video container */
     margin: auto; /* Center the container */
-    /* Add some height if necessary */
-    min-height: 500px; /* Adjust as needed */
+    min-height: 500px; /* Ensure enough height for content */
 }
 
-/* Tabs container aligned to the left */
+/* Tabs Container */
 .tabs-container {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-/* Video player container centered */
+/* Video Player Container */
 .video-container {
     flex: 3;
     display: flex;
-    justify-content: center; /* Center the video player horizontally */
-    align-items: center; /* Center the video player vertically */
+    justify-content: center; /* Center video horizontally */
+    align-items: center; /* Center video vertically */
     width: 100%;
-    /* Ensure the container has some height */
-    min-height: 300px; /* Adjust as needed */
+    min-height: 300px; /* Ensure enough height for video */
 }
 
-/* Maintain the 16:9 aspect ratio for responsive video embedding */
+/* Responsive Video Embedding */
 .embed-responsive {
     position: relative;
     width: 100%;
@@ -114,7 +134,7 @@ body { position: relative;
     overflow: hidden;
 }
 
-/* Ensure the iframe fills the embed-responsive container */
+/* Ensure Iframe Fills Container */
 .embed-responsive-item {
     position: absolute;
     top: 0;
@@ -126,29 +146,28 @@ body { position: relative;
     border: 0; /* Remove default border */
 }
 
-/* Styles for the tabs */
+/* Tabs Styling */
 .nav-tabs {
     justify-content: flex-start; /* Align tabs to the left */
-    margin-bottom: 0; /* Remove default bottom margin */
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
-/* Align tabs and remove padding */
 .nav-item {
-    margin-bottom: 0; /* Remove bottom margin for each tab item */
+    margin-bottom: 0; /* Remove bottom margin for tab items */
 }
 
-/* Ensuring nav-tabs are aligned to the left */
+/* Nav Tabs Alignment */
 #videot .nav-tabs {
     justify-content: flex-start; /* Align tabs to the left */
 }
 
-/* Removing padding from the tab-content containers */
+/* Remove Padding from Tab Content Containers */
 .tab-content .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
 
-/* Styling for active and inactive nav-link */
+/* Active and Inactive Nav Link Styling */
 #videot .nav-link.active {
     color: palevioletred;
     background-color: powderblue;
@@ -166,23 +185,21 @@ body { position: relative;
     padding-right: 15px;
     padding-left: 15px;
 }
+
+/* Card and Form Styles */
 .card {
     min-width: 200px;
 }
-.form{
-    margin:5px;
-}
-#laheta{
-    margin: auto;
-}
-#etsinta{
+
+.form {
     margin: 5px;
 }
-#name{
-    margin: 5px
+
+#laheta, #etsinta, #name {
+    margin: 5px;
 }
 
-
+/* Popup Styles */
 .popup {
     position: relative;
     display: inline-block;
@@ -191,94 +208,79 @@ body { position: relative;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  /* The actual popup */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .popup .popuptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
-
-body {
-    position: relative;
-    text-align: center;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./kuvat/kirsikka.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.3; /* Adjust the opacity as needed */
-    z-index: -1; /* Ensure the background is behind the content */
+    /* Popup Text Styling */
+    .popup .popuptext {
+        visibility: hidden;
+        width: 160px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -80px;
+    }
+
+        /* Popup Arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+    /* Popup Show Animation */
+    .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+    }
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-/* Pictures in accordion*/
-.styled-image {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-  #naama {
+
+/* Image Hover Effects */
+#naama {
     position: relative;
     width: 100%;
-  }
-  .image {
+}
+
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
-  .middle {
+}
+
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -287,74 +289,53 @@ body::before {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  #naama:hover .image {
+}
+
+#naama:hover .image {
     opacity: 0.3;
-  }
-  
-  #naama:hover .middle {
+}
+
+#naama:hover .middle {
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.text {
     background-color: #ee7bd19a;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
-/* Center the row container */
+}
+
+/* Footer Image and Row Styling */
 footer .row {
     display: flex;
-    justify-content: center; /* Center the columns horizontally */
-    flex-wrap: wrap; /* Ensure columns wrap if there's not enough space */
+    justify-content: center; /* Center columns horizontally */
+    flex-wrap: wrap; /* Ensure columns wrap if not enough space */
 }
 
 footer .column {
-    flex: 0 1 auto; /* Allow the columns to grow and shrink as needed */
-    margin: 10px; /* Add some space around each column */
+    flex: 0 1 auto; /* Allow columns to grow/shrink */
+    margin: 10px; /* Space around each column */
 }
-  #shake:hover{
-        animation: shake 0.5s;
-        animation-iteration-count: infinite;
-      }
-      
-      @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-      }
-      .button {
-        padding: 10px 15px;
-        margin-bottom: auto;
-        font-size: 14px;
-        text-align: center;
-        cursor: pointer;
-        outline: none;
-        color: #fff;
-        background-color: #ebcffa;
-        border: none;
-        border-radius: 15px;
-        box-shadow: 0 9px rgb(245, 3, 233);
-      }
-      
-      .button:hover {background-color: #fca3ccb0}
-      
-      .button:active {
-        background-color: #f30ba6;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px);
-      }
-.card-body, .card-header .card-img-top{
-    font-family: 'Lobster', cursive;
-    background-color: #fca3ccb0;
+
+/* Shake Animation */
+#shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
-    
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3
