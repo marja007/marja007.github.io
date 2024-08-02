@@ -83,6 +83,8 @@ body { position: relative;
     width: 100%;
     max-width: 1000px; /* Maximum width for the video container */
     margin: auto; /* Center the container */
+    /* Add some height if necessary */
+    min-height: 500px; /* Adjust as needed */
 }
 
 /* Tabs container aligned to the left */
@@ -99,6 +101,8 @@ body { position: relative;
     justify-content: center; /* Center the video player horizontally */
     align-items: center; /* Center the video player vertically */
     width: 100%;
+    /* Ensure the container has some height */
+    min-height: 300px; /* Adjust as needed */
 }
 
 /* Maintain the 16:9 aspect ratio for responsive video embedding */
@@ -133,7 +137,6 @@ body { position: relative;
     margin-bottom: 0; /* Remove bottom margin for each tab item */
 }
 
-
 /* Ensuring nav-tabs are aligned to the left */
 #videot .nav-tabs {
     justify-content: flex-start; /* Align tabs to the left */
@@ -155,6 +158,7 @@ body { position: relative;
     color: powderblue;
     background-color: palevioletred;
 }
+
 #videot {
     width: 100%;
     max-width: 800px;
