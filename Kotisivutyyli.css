@@ -103,6 +103,10 @@ body {
     background-color: powderblue;
 }
 
+.ytp-cued-thumbnail-overlay-image{
+    max-width: 1000px
+}
+
 #videot .nav-link {
     color: powderblue;
     background-color: palevioletred;
@@ -355,4 +359,15 @@ body {
 .card-body, .card-header .card-img-top {
     font-family: 'Lobster', cursive;
     background-color: #fca3ccb0;
+}
+/* Center the row container */
+footer .row {
+    display: flex;
+    justify-content: center; /* Center the columns horizontally */
+    flex-wrap: wrap; /* Ensure columns wrap if there's not enough space */
+}
+
+footer .column {
+    flex: 0 1 auto; /* Allow the columns to grow and shrink as needed */
+    margin: 10px; /* Add some space around each column */
 }
