@@ -76,18 +76,33 @@ h3{
 
 body { position: relative; 
 }
+/* Ensuring nav-tabs are aligned to the left */
+#videot .nav-tabs {
+    justify-content: flex-start; /* Align tabs to the left */
+}
+
+/* Removing padding from the tab-content containers */
+.tab-content .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Styling for active and inactive nav-link */
+#videot .nav-link.active {
+    color: palevioletred;
+    background-color: powderblue;
+}
+
+#videot .nav-link {
+    color: powderblue;
+    background-color: palevioletred;
+}
 #videot {
     width: 100%;
     max-width: 800px;
     margin-top: 100px;
     padding-right: 15px;
     padding-left: 15px;
-}
-#videot .nav-link.active {
-    color: palevioletred; background-color: powderblue;
-}
-#videot .nav-link {
-    color: powderblue; background-color: palevioletred;
 }
 .card {
     min-width: 200px;
