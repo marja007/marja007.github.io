@@ -149,13 +149,14 @@ margin: auto;
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-body{
-    background-image: url(./kuvat/Aamu.jpg) !important;
+body {
+    background-image: url(./kuvat/Aamu.JPG) !important;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-size: cover;
-    background-blend-mode:lighten
-  }
+    background-blend-mode: lighten;
+    text-align: center
+}
   #naama {
     position: relative;
     width: 100%;
