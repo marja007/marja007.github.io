@@ -154,7 +154,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-blend-mode: lighten;
+    background-image: linear-gradient(red, yellow, blue);
+    opacity: 0.3;
     text-align: center
 }
   #naama {
