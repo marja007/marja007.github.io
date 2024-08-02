@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fi">
 <head>
@@ -465,67 +466,63 @@
 
         </div>
     </div>
-        <div class="video-section">
-            <div class="tabs-container">
-                <ul class="nav nav-tabs" id="videot">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#home">Video 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">Video 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu2">Video 3</a>
-                    </li>
-                </ul>
+    <div>
+        <ul class="nav nav-tabs" id="videot">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Video 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Video 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Video 3</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active container-fluid" id="home">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QfySIkxdBDw"></iframe>
+                </div>
             </div>
-            <div class="video-container">
-                <div class="tab-content">
-                    <div class="tab-pane active container-fluid" id="home">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QfySIkxdBDw" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane container-fluid" id="menu1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GnFizAtF2u4" allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane container-fluid" id="menu2">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7DAVdr_cws" allowfullscreen></iframe>
-                        </div>
-                    </div>
+            <div class="tab-pane container-fluid" id="menu1">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GnFizAtF2u4"></iframe>
+                </div>
+            </div>
+            <div class="tab-pane container-fluid" id="menu2">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7DAVdr_cws"></iframe>
                 </div>
             </div>
         </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" id="Yhteystiedot">
         <br>
         <br>
-        <div class="container" id="Yhteystiedot">
-            <br>
-            <br>
-            <h2>Contact info</h2>
-            <p>Open for collaboration</p>
-            <a href="https://www.linkedin.com/in/marja-siniluoto/">LinkedIn</a>
-            <a href="https://www.instagram.com/the_siniluoto/">Instagram</a>
-            <table class="table-responsive table-striped">
-                <thead>
-                    <tr>
-                        <th>Nimi</th>
-                        <th>Email</th>
-                        <th>Puhelinnumero</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Marja Siniluoto</td>
-                        <td>marja.k.siniluoto@gmail.com</td>
-                        <td>044-5 222 886</td>
-                    </tr>
-                </tbody>
-            </table>
+        <h2>Contact info</h2>
+        <p>Open for collaboration</p>
+        <a href="https://www.linkedin.com/in/marja-siniluoto/">LinkedIn</a>
+        <a href="https://www.instagram.com/the_siniluoto/">Instagram</a>
+        <table class="table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Email</th>
+                    <th>Puhelinnumero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marja Siniluoto</td>
+                    <td>marja.k.siniluoto@gmail.com</td>
+                    <td>044-5 222 886</td>
+                </tr>
+            </tbody>
+        </table>
 
-            <!--<h3>Lomake ei vielä lähde mihinkään, mutta se on muuten toimiva</h3>
+        <!--<h3>Lomake ei vielä lähde mihinkään, mutta se on muuten toimiva</h3>
         <div class="container">
             <div class="row">
 
@@ -612,44 +609,44 @@
                 }
             </script>
         </div>-->
+    </div>
+    <div id="loppudemot"></div>
+    <div class="container" id="naama">
+        <img src="./kuvat/Omakuva.jpg" alt="Self portrait" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Me</div>
         </div>
-        <div id="loppudemot"></div>
-        <div class="container" id="naama">
-            <img src="./kuvat/Omakuva.jpg" alt="Self portrait" class="image" style="width:100%">
-            <div class="middle">
-                <div class="text">Me</div>
-            </div>
+    </div>
+    <br>
+    <footer>
+        <div class="popup" style="font-size:30px;" onclick="myFunction()">
+            Click here for pop up!
+            <span class="popuptext" style="font-size:100px;" id="myPopup">&#127864</span>
         </div>
-        <br>
-        <footer>
-            <div class="popup" style="font-size:30px;" onclick="myFunction()">
-                Click here for pop up!
-                <span class="popuptext" style="font-size:100px;" id="myPopup">&#127864</span>
-            </div>
 
 
-            <script>
-                // When the user clicks on div, open the popup
-                function myFunction() {
-                    var popup = document.getElementById("myPopup");
-                    popup.classList.toggle("show");
-                }
-            </script>
-            <h2>Shake the flowers</h2>
-            <div class="row">
-                <div class="column">
-                    <img src="./kuvat/lilja.jpg" alt="Lily" id="shake" width="300" height="300">
-                </div>
-                <div class="column">
-                    <img src="./kuvat/ruusu.jpg" alt="Rose" id="shake" width="300" height="300">
-                </div>
-                <div class="column">
-                    <img src="./kuvat/voikukka.jpg" alt="Daffodil" id="shake" width="300" height="300">
-                </div>
-                <div class="column">
-                    <img src="./kuvat/gerbera.jpg" alt="gerbera" id="shake" width="300" height="300">
-                </div>
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+        </script>
+        <h2>Shake the flowers</h2>
+        <div class="row">
+            <div class="column">
+                <img src="./kuvat/lilja.jpg" alt="Lily" id="shake" width="300" height="300">
             </div>
-        </footer>
+            <div class="column">
+                <img src="./kuvat/ruusu.jpg" alt="Rose" id="shake" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="./kuvat/voikukka.jpg" alt="Daffodil" id="shake" width="300" height="300">
+            </div>
+            <!--<div class="column">
+              <img src="./kuvat/gerbera.jpg" alt="gerbera" id="shake" width="300" height="300">
+            </div>-->
+        </div>
+    </footer>
 </body>
 </html>

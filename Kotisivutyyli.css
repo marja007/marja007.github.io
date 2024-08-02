@@ -1,4 +1,4 @@
-/* Navbar Custom Styles */
+
 .navbar-custom {
     background-image: url(./kuvat/kirsikka.jpg);
     background-repeat: no-repeat;
@@ -33,7 +33,6 @@
     cursor: pointer;
 }
 
-/* Carousel Image Styles */
 .carousel-inner img {
     width: 100%;
     height: 100%;
@@ -48,12 +47,10 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-/* General Page Padding */
 #yleistä {
     padding-top: 70px;
 }
 
-/* Table Alignment */
 th {
     text-align: left;
 }
@@ -62,112 +59,45 @@ td {
     padding-left: 3px;
 }
 
-/* Text Alignment */
-p, h3 {
+p {
     text-align: center;
 }
 
-/* Demo Section */
+h3 {
+    text-align: center;
+}
+
 #demo {
     width: 100%;
     max-width: 600px;
     margin: auto;
 }
 
-/* Carousel Image Styling */
 .carousel-inner img {
     object-fit: cover;
     width: 100% !important;
     max-height: 340px !important;
 }
 
-/* Navigation Tabs Active State */
 .nav-link.active {
     color: rgb(250, 173, 241) !important;
 }
 
-/* Body Styles */
 body {
     position: relative;
-    text-align: center;
-    background-image: url(./kuvat/kirsikka.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    opacity: 0.3; /* Background opacity */
-    z-index: -1; /* Background behind content */
 }
-
-/* Container for Video and Tabs */
-.video-section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1000px; /* Maximum width for the video container */
-    margin: auto; /* Center the container */
-    min-height: 500px; /* Ensure enough height for content */
-}
-
-/* Tabs Container */
-.tabs-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Video Player Container */
-.video-container {
-    flex: 3;
-    display: flex;
-    justify-content: center; /* Center video horizontally */
-    align-items: center; /* Center video vertically */
-    width: 100%;
-    min-height: 300px; /* Ensure enough height for video */
-}
-
-/* Responsive Video Embedding */
-.embed-responsive {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-/* Ensure Iframe Fills Container */
-.embed-responsive-item {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; /* Remove default border */
-}
-
-/* Tabs Styling */
-.nav-tabs {
-    justify-content: flex-start; /* Align tabs to the left */
-    margin-bottom: 0; /* Remove bottom margin */
-}
-
-.nav-item {
-    margin-bottom: 0; /* Remove bottom margin for tab items */
-}
-
-/* Nav Tabs Alignment */
+/* Ensuring nav-tabs are aligned to the left */
 #videot .nav-tabs {
     justify-content: flex-start; /* Align tabs to the left */
 }
 
-/* Remove Padding from Tab Content Containers */
+/* Removing padding from the tab-content containers */
 .tab-content .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
 
-/* Active and Inactive Nav Link Styling */
+/* Styling for active and inactive nav-link */
 #videot .nav-link.active {
     color: palevioletred;
     background-color: powderblue;
@@ -186,7 +116,6 @@ body {
     padding-left: 15px;
 }
 
-/* Card and Form Styles */
 .card {
     min-width: 200px;
 }
@@ -195,11 +124,19 @@ body {
     margin: 5px;
 }
 
-#laheta, #etsinta, #name {
+#laheta {
+    margin: auto;
+}
+
+#etsinta {
     margin: 5px;
 }
 
-/* Popup Styles */
+#name {
+    margin: 5px
+}
+
+
 .popup {
     position: relative;
     display: inline-block;
@@ -210,7 +147,7 @@ body {
     user-select: none;
 }
 
-    /* Popup Text Styling */
+    /* The actual popup */
     .popup .popuptext {
         visibility: hidden;
         width: 160px;
@@ -226,7 +163,7 @@ body {
         margin-left: -80px;
     }
 
-        /* Popup Arrow */
+        /* Popup arrow */
         .popup .popuptext::after {
             content: "";
             position: absolute;
@@ -238,13 +175,14 @@ body {
             border-color: #555 transparent transparent transparent;
         }
 
-    /* Popup Show Animation */
+    /* Toggle this class - hide and show the popup */
     .popup .show {
         visibility: visible;
         -webkit-animation: fadeIn 1s;
         animation: fadeIn 1s;
     }
 
+/* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0;
@@ -264,8 +202,41 @@ body {
         opacity: 1;
     }
 }
+/*body {
+   background-image: url(./kuvat/kirsikka.jpg) !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(199,221,115,0.3);
+    text-align: center
+}*/
+body {
+    position: relative;
+    text-align: center;
+}
 
-/* Image Hover Effects */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./kuvat/kirsikka.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.3; /* Adjust the opacity as needed */
+        z-index: -1; /* Ensure the background is behind the content */
+    }
+/* Pictures in accordion*/
+.styled-image {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
 #naama {
     position: relative;
     width: 100%;
@@ -306,19 +277,6 @@ body {
     padding: 16px 32px;
 }
 
-/* Footer Image and Row Styling */
-footer .row {
-    display: flex;
-    justify-content: center; /* Center columns horizontally */
-    flex-wrap: wrap; /* Ensure columns wrap if not enough space */
-}
-
-footer .column {
-    flex: 0 1 auto; /* Allow columns to grow/shrink */
-    margin: 10px; /* Space around each column */
-}
-
-/* Shake Animation */
 #shake:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
@@ -338,4 +296,63 @@ footer .column {
     }
 
     30% {
-        transform: translate(3
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.button {
+    padding: 10px 15px;
+    margin-bottom: auto;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #ebcffa;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(245, 3, 233);
+}
+
+    .button:hover {
+        background-color: #fca3ccb0
+    }
+
+    .button:active {
+        background-color: #f30ba6;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+    }
+
+.card-body, .card-header .card-img-top {
+    font-family: 'Lobster', cursive;
+    background-color: #fca3ccb0;
+}
