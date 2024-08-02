@@ -149,15 +149,33 @@ margin: auto;
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-body {
-    /*  background-image: url(./kuvat/kirsikka.jpg) !important;*/
+/*body {
+   background-image: url(./kuvat/kirsikka.jpg) !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: linear-gradient(red, yellow, blue);
-    opacity: 0.3;
+    background-color: rgba(199,221,115,0.3);
     text-align: center
+}*/
+    body {
+    position: relative;
+    text-align: center;
 }
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./kuvat/kirsikka.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.3; /* Adjust the opacity as needed */
+        z-index: -1; /* Ensure the background is behind the content */
+    }
   #naama {
     position: relative;
     width: 100%;
