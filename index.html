@@ -78,572 +78,580 @@
         </div>
     </div>
 
-            <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                    <li data-target="#demo" data-slide-to="0" class="active"></li>
-                    <li data-target="#demo" data-slide-to="1"></li>
-                    <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./kuvat/Omakuva.jpg" alt="Self portrait">
-                        <div class="carousel-caption">
-                            <h3>On the top</h3>
-                            <p>On the top of Himos, autumn 2020</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./kuvat/Leijona.JPG" alt="Lion">
-                        <div class="carousel-caption">
-                            <h3>Lion</h3>
-                            <p>Picture taken in Korkeasaari 2010 </p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./kuvat/Jousi.JPG" alt="Spring">
-                        <div class="carousel-caption">
-                            <h3>Spring</h3>
-                            <p>In Ruoholahti 2010</p>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./kuvat/Omakuva.jpg" alt="Self portrait">
+                <div class="carousel-caption">
+                    <h3>On the top</h3>
+                    <p>On the top of Himos, autumn 2020</p>
                 </div>
             </div>
-            <br>
-            <div class="container" id="yleistä">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <h3>Who?</h3>
-                        <p>
-                            Currently, I am serving as a Service Specialist Developer at Rajobit Oy where I am responsible for ensuring the functionality 
-                            and further development of clients' RPA solutions. 
-                            Additionally, I have been involved in developing the internal validation process and implementing it in practice.
-
-                            For a short period I worked as a Service Lead at Futurice FutuCare, 
-                            where I successfully established strong communications and relationships with our customers. By understanding their needs, 
-                            I helped them add value to their own customers, leading to increased satisfaction and loyalty. 
-                            Although the work was very interesting I still wanted to revert back to RPA and thus ended up changing companies.
-
-                            Before my role as a Service Lead, 
-                            I worked as a RPA developer at Azets Insight Oy, 
-                            where I was a vital member of our inhouse automation team. 
-                            During this time, I developed UiPath robots for various departments, including payroll. 
-                            Additionally, I led a project from planning to pilot, 
-                            demonstrating my ability to effectively manage and deliver successful automation initiatives. 
-                            Handling diverse tickets, ranging from user management to bug fixing in automations, 
-                            has further enhanced my technical proficiency and problem-solving skills.
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>Future</h3>
-                        <p>
-                            In the future, I aspire to take my skills to new heights through dedication and hard work.
-                            I derive great satisfaction from helping others and continuously learning.
-                            My commitment to excellence motivates me to go the extra mile in every aspect of my job.
-                            Additionally, I enjoy running, so embracing the concept of going the extra mile is not unfamiliar to me.
-                        </p>
-                        <a href="#Yhteystiedot">Contact info</a>
-                    </div>
-                    <div class="col-lg-4">
-                        <h3>Past</h3>
-                        <p>
-                            With a rich background in the restaurant business as a head chef,
-                            I have a long history of leading and dealing with Personalities and thriving in demanding situations.
-                            My experience in dealing with customers and coworkers naturally lends itself to effective communication and collaboration.
-                            I am motivated by the success of my team and the satisfaction of our customers,
-                            which drives me to consistently deliver the best possible outcomes.
-                        </p>
-                    </div>
-                </div>
-                <div id="javat"></div>
-                <br>
-                <br>
-
-                <div class="card-deck">
-                    <div class="card">
-                        <div class="card-img-top" alt="Game of dice"></div>
-                        <h3>Game of dice</h3>
-                        <form>
-                            <label>Bet:</label>
-                            <input type="text" id="panos" size="6"> <br><br>
-                            <input type="button" value="Play" onclick="laske()">
-                        </form>
-                        <div id="vastaus"></div>
-                        <script>
-                            function laske() {
-                                var panos = document.getElementById("panos").value;
-                                var noppa = Math.round((Math.random() * 5) + 1);
-                                var lasku = panos * 1.25;
-                                var lasku1 = panos * 1.5;
-                                var tulos;
-                                if (noppa == 1 || noppa == 3 || noppa == 5) {
-                                    tulos = "Noppa oli " + noppa + " -ei voittoa";
-                                } else if (noppa == 2 || noppa == 4) {
-                                    tulos = "Noppa oli " + noppa + " -voitto on " + lasku.toFixed(2);
-                                } else {
-                                    tulos = "Noppa oli " + noppa + " -voitto on " + lasku1.toFixed(2);
-                                }
-                                document.getElementById("vastaus").innerHTML = " <p>" + tulos + "</p>";
-                            }
-                        </script>
-                        <div class="card-body">
-                            <h5 class="card-title">Game of dice</h5>
-                            <p class="card-text">Test if you get lucky rolling the dice</p>
-                            <p class="card-text"><small class="text-muted">By rolling 2, 4 or 6 you win</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-top" alt="Social security number unraveller">
-                            <h3>Finnish social security number unraveller</h3>
-                            <form>
-                                <label>Finnish social security number:</label>
-                                <input type="text" id="hetu" size="13">
-                                <input type="button" value="Unravel" onclick="nayt()">
-                            </form>
-                            <div id="vastaa"></div>
-                            <script>
-                                function nayt() {
-                                    var hetu = document.getElementById("hetu").value;
-                                    var tokavika = hetu.charAt(9);
-                                    var teksti = ""
-                                    var sukupuoli;
-                                    if ((tokavika % 2) == 0) {
-                                        sukupuoli = "nainen"
-                                        teksti = "Gender is femail."
-                                    } else {
-                                        sukupuoli = "mies"
-                                        teksti = "Gender is male."
-                                    }
-                                    var pp = hetu.substr(0, 2);
-                                    var kk = hetu.substr(2, 2);
-                                    var vvvv = hetu.substr(4, 2)
-                                    var tuhat = hetu.charAt(6)
-                                    var alku;
-                                    if (tuhat == "A") {
-                                        alku = "20"
-                                    } else if (tuhat == "+") {
-                                        alku = "18"
-                                    } else {
-                                        alku = "19"
-                                    }
-                                    var teksti1 = alku + vvvv
-                                    document.getElementById("vastaa").innerHTML = teksti + "<br>" + "Birthday is " + pp + ". " + kk + ". " + teksti1;
-                                }
-                            </script>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Social security number unraveller</h5>
-                            <p class="card-text">Get your gender and birthday from your finnish social security number</p>
-                            <p class="card-text"><small class="text-muted">Gender is deducted from the seconds to last character (odd/even)</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-top" alt="Raffle">
-                            <h3>Raffle</h3>
-                            <form>
-                                <label>Name to add:</label>
-                                <input type="text" id="nimi" size="10">
-                                <input type="button" value="Add to list" onclick="lisaa()">
-                                <input type="button" value="Pick the winner" onclick="arvo()">
-                            </form>
-                            <div id="lisays"></div>
-                            <script>
-                                var nimet = [];
-                                function lisaa() {
-                                    var paikka = nimet.length;
-                                    nimet[paikka] = document.getElementById("nimi").value;
-                                    document.getElementById("nimi").value = "";
-                                    var teksti = "";
-                                    for (var i = 0; i < nimet.length; i++) {
-                                        teksti = teksti + nimet[i] + " "
-                                    }
-                                    document.getElementById("lisays").innerHTML = "Names on the list: " + teksti;
-                                }
-                                function arvo() {
-                                    var voittaja = Math.floor(Math.random() * nimet.length);
-                                    var onnekas = nimet[voittaja]
-                                    document.getElementById("lisays").innerHTML = "Winner is: " + onnekas;
-                                }
-                            </script>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Raffle machine</h5>
-                            <p class="card-text">Add names to list. When you are ready press Pick the winner button.</p>
-                            <p class="card-text"><small class="text-muted">Get the lucky winner fron your list</small></p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-img-top" alt="String converter">
-                            <h3>String converter</h3>
-                            <form>
-                                <label>Word to be converted:</label>
-                                <input type="text" id="nim" size="20">
-                                <input type="button" value="Show" onclick="nayta()">
-                            </form>
-                            <div id="vastau"></div>
-                            <script>
-                                function nayta() {
-                                    var nim = document.getElementById("nim").value;
-                                    var nimi2 = nim.toUpperCase();
-                                    var nimi1 = nim.toLowerCase();
-                                    var maara = nim.length;
-                                    var eka = nim.charAt(0);
-                                    var kolme = nim.substr(0, 3);
-                                    document.getElementById("vastau").innerHTML = "Upper case: " + nimi2 + "<br>" + "Lower case: " + nimi1 + "<br>" +
-                                        "Number of characters: " + maara + "<br>" + "First characters: " + eka + "<br>" + "First three characters: " + kolme;
-                                }
-                            </script>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">String converter</h5>
-                            <p class="card-text">Converts the given string to upper and lower case and gives first characters</p>
-                            <p class="card-text"><small class="text-muted">UpperCase, LowerCase, Lenght, charAt and substring</small></p>
-                        </div>
-                    </div>
+            <div class="carousel-item">
+                <img src="./kuvat/Leijona.JPG" alt="Lion">
+                <div class="carousel-caption">
+                    <h3>Lion</h3>
+                    <p>Picture taken in Korkeasaari 2010 </p>
                 </div>
             </div>
-            <br>
-            <div class="container">
-                <div id="accordion">
-                    <!--<div class="card" id="tietotekniikka">
-                      <div class="card-header">
-                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                          Tietotekniikka
-                        </a>
-                      </div>
-                      <div id="collapseOne" class="collapse" data-parent="#accordion">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col">Todistuksia tietoteknisestä osaamisestani</div>
-                            <div class="col">
-                                <a href="./kuvat/opintosuoritusote.png">
-                                    <img src="./kuvat/opintosuoritusote.png" alt="Opintosuoritusote" border="1px solid #ddd" border-radius=" 4px"
-                                         padding="5px" width="150px">
-                                </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>-->
-                    <div class="card" id="valokuvaus">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                                Photography
-                            </a>
-                        </div>
-                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">I have practiced photography and here are few shots. 
-                                    The lion and leaves are pictured in Korkesaari, Spring in Ruoholahti</div>
-                                    <div class="col">
-                                        <a href="./kuvat/Leijona.JPG">
-                                            <img src="./kuvat/Leijona.JPG" alt="Lion" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Jousi.JPG">
-                                            <img src="./kuvat/Jousi.JPG" alt="Spring" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Aamu.JPG">
-                                            <img src="./kuvat/Aamu.JPG" alt="Leaves" class="styled-image">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="liikunta">
-                        <div class="card-header">
-                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                                Athletics
-                            </a>
-                        </div>
-                        <div id="collapseThree" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">
-                                        Walking around Tuusula lake.
-                                        Check also videos 2 and 3!
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Marssi.png">
-                                            <img src="./kuvat/Marssi.png" alt="Diploma of completion of Tuusula lake summernight march" class="styled-image">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="käsityöt">
-                        <div class="card-header">
-                            <a class="card-link" data-toggle="collapse" href="#collapseFour">
-                                Arts and crafts
-                            </a>
-                        </div>
-                        <div id="collapseFour" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">Paper protorype and finished product of silver wolf pendant</div>
-                                    <div class="col">
-                                        <a href="./kuvat/Hopeasusi.JPG">
-                                            <img src="./kuvat/Hopeasusi.JPG" alt="Paper protorype for silver wolf pendant" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Hopeasusivalmis.jpg">
-                                            <img src="./kuvat/Hopeasusivalmis.jpg" alt="Silver wolf pendant" class="styled-image">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card" id="kokkailu">
-                        <div class="card-header">
-                            <a class="card-link" data-toggle="collapse" href="#collapseFive">
-                                Restaurant business
-                            </a>
-                        </div>
-                        <div id="collapseFive" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">Some Halloween snap shots from my restaurant days</div>
-                                    <div class="col">
-                                        <a href="./kuvat/Kokki.JPG">
-                                            <img src="./kuvat/Kokki.JPG" alt="me in a chef uniform holding a knife" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Minions.JPG">
-                                            <img src="./kuvat/Minions.JPG" alt="cupcaces with minions decorations" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Kurpitsa1.JPG">
-                                            <img src="./kuvat/Kurpitsa1.JPG" alt="vomiting Halloween pumpkin" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Kurpitsa2.JPG">
-                                            <img src="./kuvat/Kurpitsa2.JPG" alt="Halloween pumpkin with cissors in the eye" class="styled-image">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <a href="./kuvat/Kurpitsa3.JPG">
-                                            <img src="./kuvat/Kurpitsa3.JPG" alt="Halloween pumpkin with axe" class="styled-image">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--<div class="card" id="cv">
-                        <div class="card-header">
-                            <a class="card-link" data-toggle="collapse" href="#collapseSix">
-                                CV
-                            </a>
-                        </div>
-                        <div id="collapseSix" class="collapse" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col">Curriculum vitaeni</div>
-                                    <div class="col"> <a href="./kuvat/CV.pdf"> <img src="./kuvat/CV.pdf" alt="curriculum vitae" width="150px"></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
-
+            <div class="carousel-item">
+                <img src="./kuvat/Jousi.JPG" alt="Spring">
+                <div class="carousel-caption">
+                    <h3>Spring</h3>
+                    <p>In Ruoholahti 2010</p>
                 </div>
             </div>
-            <div>
-                <ul class="nav nav-tabs" id="videot">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#home">Video 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu1">Video 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#menu2">Video 3</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane active container-fluid" id="home">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QfySIkxdBDw"></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane container-fluid" id="menu1">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GnFizAtF2u4"></iframe>
-                        </div>
-                    </div>
-                    <div class="tab-pane container-fluid" id="menu2">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7DAVdr_cws"></iframe>
-                        </div>
-                    </div>
-                </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="yleistä">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>Who?</h3>
+                <p>
+                    Currently, I am serving as a Service Specialist Developer at Rajobit Oy where I am responsible for ensuring the functionality
+                    and further development of clients' RPA solutions.
+                    Additionally, I have been involved in developing the internal validation process and implementing it in practice.
+
+                    For a short period I worked as a Service Lead at Futurice FutuCare,
+                    where I successfully established strong communications and relationships with our customers. By understanding their needs,
+                    I helped them add value to their own customers, leading to increased satisfaction and loyalty.
+                    Although the work was very interesting I still wanted to revert back to RPA and thus ended up changing companies.
+
+                    Before my role as a Service Lead,
+                    I worked as a RPA developer at Azets Insight Oy,
+                    where I was a vital member of our inhouse automation team.
+                    During this time, I developed UiPath robots for various departments, including payroll.
+                    Additionally, I led a project from planning to pilot,
+                    demonstrating my ability to effectively manage and deliver successful automation initiatives.
+                    Handling diverse tickets, ranging from user management to bug fixing in automations,
+                    has further enhanced my technical proficiency and problem-solving skills.
+                </p>
             </div>
-            <br>
-            <br>
-            <div class="container" id="Yhteystiedot">
-                <br>
-                <br>
-                <h2>Contact info</h2>
-                <p>Open for collaboration</p>
-                <a href="https://www.linkedin.com/in/marja-siniluoto/">LinkedIn</a>
-                <a href="https://www.instagram.com/the_siniluoto/">Instagram</a>
-                <table class="table-responsive table-striped">
-                    <thead>
-                        <tr>
-                            <th>Nimi</th>
-                            <th>Email</th>
-                            <th>Puhelinnumero</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Marja Siniluoto</td>
-                            <td>marja.k.siniluoto@gmail.com</td>
-                            <td>044-5 222 886</td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <!--<h3>Lomake ei vielä lähde mihinkään, mutta se on muuten toimiva</h3>
-                <div class="container">
-                    <div class="row">
-
-                        <form class="form-inline" id="form" onsubmit="return false">
-                            <div class="col-sm-6">
-                                <label for="name">
-                                    Nimi:<br>
-                                    <input type="text" id="name" name="name" required>
-                                </label>
-                                <label for="email">Sähköposti: <br></label>
-                                <input type="email" id="email" name="email" required><br><br>
-                                <label for="tel">Puhelinnumero: </label><br>
-                                <input type="tel" id="tel" name="tel" placeholder="+358 11 1111 111" pattern="\+?[0-9 () \-]+" required><br><br>
-                                <label for="palaute">Palaute: <br></label><br>
-                                <textarea id="palaute" name="palaute" rows="4" cols="50" placeholder="Parasta tyyppi ikinä!"></textarea><br>
-
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="radio">Arvio sivuistani: </label><br>
-                                <input type="radio" id="jee" name="arvio" value="jee">
-                                <label for="jee">Jee! </label><br>
-                                <input type="radio" id="buu" name="arvio" value="buu">
-                                <label for="buu">Buu! </label><br>
-                                <input type="radio" id="kehitys" name="arvio" value="kehitys">
-                                <label for="kehitys">Kehitettävää </label><br>
-                            </div>
-                            Mitä haluaisit lisää?
-                            <label>
-                                <input type="checkbox" id="kuvia" name="lisaa" value="kuvia"> kuvia
-                            </label>
-                            <label>
-                                <input type="checkbox" id="reseptejä" name="lisaa" value="pelejä"> pelejä
-                            </label>
-                            <label>
-                                <input type="checkbox" id="tietoa" name="lisaa" value="taustatietoa"> taustatietoa
-                            </label>
-
-
-                            <label for="etsinta">Löysitkö etsimäsi sivuiltamme? </label>
-                            <select name="etsinta" id="etsinta">
-                                <option value="kyllä">Kyllä </option>
-                                <option value="en">En </option>
-                                <option value="ehkä">Ehkä </option>
-                                <option value="kyllä ja ei">Kyllä ja ei </option>
-                            </select>
-                            <input class="button" type="submit" id="laheta" value="lähetä" onclick="tiedot()">
-                            <input class="button" type="reset" value="tyhjennä">
-                            <br>
-                            <br>
-                        </form>
-                        <div id="tuloste"></div>
-
-                    </div>
-                    <script type="text/Javascript">
-                        function tiedot() {
-                            var nimi = document.getElementById("name").value;
-                            var email = document.getElementById("email").value;
-                            var tel = document.getElementById("tel").value;
-                            var palaute = document.getElementById("palaute").value;
-                            var muuttuja = "Arvio sivuistamme on ";
-                            var radios = document.getElementsByName("arvio");
-                            for (var i = 0, length = radios.length; i < length; i++) {
-                                if (radios[i].checked) {
-                                    muuttuja = muuttuja + radios[i].value;
-                                    break;
-                                }
-                            }
-                            var monivalinnat = "Näitä haluaisit lisää ";
-                            var boxit = document.getElementsByName("lisaa");
-                            for (var i = 0, length = boxit.length; i < length; i++) {
-                                if (boxit[i].checked) {
-                                    monivalinnat = monivalinnat + " " + boxit[i].value;
-                                }
-                            }
-                            var valinta = "Löysitkö etsimäsi sivuiltamme ";
-                            var x = document.getElementById("etsinta").selectedIndex;
-                            var y = document.getElementById("etsinta").options;
-                            valinta = valinta + y[x].text;
-
-
-                            document.getElementById("tuloste").innerHTML = "Hei " + nimi + " kiitos palautteestasi." + "<br>" +
-                                "Sähköpostisi on " + email + " Puhelinnumerosi on " + tel + "<br>" + "Palautteesi on: " + palaute
-                                + "<br>" + muuttuja + "<br>" + monivalinnat + "<br>" + valinta;
-                        }
-                    </script>
-                </div>-->
+            <div class="col-lg-4">
+                <h3>Future</h3>
+                <p>
+                    In the future, I aspire to take my skills to new heights through dedication and hard work.
+                    I derive great satisfaction from helping others and continuously learning.
+                    My commitment to excellence motivates me to go the extra mile in every aspect of my job.
+                    Additionally, I enjoy running, so embracing the concept of going the extra mile is not unfamiliar to me.
+                </p>
+                <a href="#Yhteystiedot">Contact info</a>
             </div>
-            <div id="loppudemot"></div>
-            <div class="container" id="naama">
-                <img src="./kuvat/Omakuva.jpg" alt="Self portrait" class="image" style="width:100%">
-                <div class="middle">
-                    <div class="text">Me</div>
-                </div>
+            <div class="col-lg-4">
+                <h3>Past</h3>
+                <p>
+                    With a rich background in the restaurant business as a head chef,
+                    I have a long history of leading and dealing with Personalities and thriving in demanding situations.
+                    My experience in dealing with customers and coworkers naturally lends itself to effective communication and collaboration.
+                    I am motivated by the success of my team and the satisfaction of our customers,
+                    which drives me to consistently deliver the best possible outcomes.
+                </p>
             </div>
-            <br>
-            <footer>
-                <div class="popup" style="font-size:30px;" onclick="myFunction()">
-                    Click here for pop up!
-                    <span class="popuptext" style="font-size:100px;" id="myPopup">&#127864</span>
-                </div>
+        </div>
+        <div id="javat"></div>
+        <br>
+        <br>
 
-
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-img-top" alt="Game of dice"></div>
+                <h3>Game of dice</h3>
+                <form>
+                    <label>Bet:</label>
+                    <input type="text" id="panos" size="6"> <br><br>
+                    <input type="button" value="Play" onclick="laske()">
+                </form>
+                <div id="vastaus"></div>
                 <script>
-                    // When the user clicks on div, open the popup
-                    function myFunction() {
-                        var popup = document.getElementById("myPopup");
-                        popup.classList.toggle("show");
+                    function laske() {
+                        var panos = document.getElementById("panos").value;
+                        var noppa = Math.round((Math.random() * 5) + 1);
+                        var lasku = panos * 1.25;
+                        var lasku1 = panos * 1.5;
+                        var tulos;
+                        if (noppa == 1 || noppa == 3 || noppa == 5) {
+                            tulos = "Noppa oli " + noppa + " -ei voittoa";
+                        } else if (noppa == 2 || noppa == 4) {
+                            tulos = "Noppa oli " + noppa + " -voitto on " + lasku.toFixed(2);
+                        } else {
+                            tulos = "Noppa oli " + noppa + " -voitto on " + lasku1.toFixed(2);
+                        }
+                        document.getElementById("vastaus").innerHTML = " <p>" + tulos + "</p>";
                     }
                 </script>
-                <h2>Shake the flowers</h2>
-                <div class="row">
-                    <div class="column">
-                        <img src="./kuvat/lilja.jpg" alt="Lily" id="shake" width="300" height="300">
+                <div class="card-body">
+                    <h5 class="card-title">Game of dice</h5>
+                    <p class="card-text">Test if you get lucky rolling the dice</p>
+                    <p class="card-text"><small class="text-muted">By rolling 2, 4 or 6 you win</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-top" alt="Social security number unraveller">
+                    <h3>Finnish social security number unraveller</h3>
+                    <form>
+                        <label>Finnish social security number:</label>
+                        <input type="text" id="hetu" size="13">
+                        <input type="button" value="Unravel" onclick="nayt()">
+                    </form>
+                    <div id="vastaa"></div>
+                    <script>
+                        function nayt() {
+                            var hetu = document.getElementById("hetu").value;
+                            var tokavika = hetu.charAt(9);
+                            var teksti = ""
+                            var sukupuoli;
+                            if ((tokavika % 2) == 0) {
+                                sukupuoli = "nainen"
+                                teksti = "Gender is femail."
+                            } else {
+                                sukupuoli = "mies"
+                                teksti = "Gender is male."
+                            }
+                            var pp = hetu.substr(0, 2);
+                            var kk = hetu.substr(2, 2);
+                            var vvvv = hetu.substr(4, 2)
+                            var tuhat = hetu.charAt(6)
+                            var alku;
+                            if (tuhat == "A") {
+                                alku = "20"
+                            } else if (tuhat == "+") {
+                                alku = "18"
+                            } else {
+                                alku = "19"
+                            }
+                            var teksti1 = alku + vvvv
+                            document.getElementById("vastaa").innerHTML = teksti + "<br>" + "Birthday is " + pp + ". " + kk + ". " + teksti1;
+                        }
+                    </script>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Social security number unraveller</h5>
+                    <p class="card-text">Get your gender and birthday from your finnish social security number</p>
+                    <p class="card-text"><small class="text-muted">Gender is deducted from the seconds to last character (odd/even)</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-top" alt="Raffle">
+                    <h3>Raffle</h3>
+                    <form>
+                        <label>Name to add:</label>
+                        <input type="text" id="nimi" size="10">
+                        <input type="button" value="Add to list" onclick="lisaa()">
+                        <input type="button" value="Pick the winner" onclick="arvo()">
+                    </form>
+                    <div id="lisays"></div>
+                    <script>
+                        var nimet = [];
+                        function lisaa() {
+                            var paikka = nimet.length;
+                            nimet[paikka] = document.getElementById("nimi").value;
+                            document.getElementById("nimi").value = "";
+                            var teksti = "";
+                            for (var i = 0; i < nimet.length; i++) {
+                                teksti = teksti + nimet[i] + " "
+                            }
+                            document.getElementById("lisays").innerHTML = "Names on the list: " + teksti;
+                        }
+                        function arvo() {
+                            var voittaja = Math.floor(Math.random() * nimet.length);
+                            var onnekas = nimet[voittaja]
+                            document.getElementById("lisays").innerHTML = "Winner is: " + onnekas;
+                        }
+                    </script>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Raffle machine</h5>
+                    <p class="card-text">Add names to list. When you are ready press Pick the winner button.</p>
+                    <p class="card-text"><small class="text-muted">Get the lucky winner fron your list</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img-top" alt="String converter">
+                    <h3>String converter</h3>
+                    <form>
+                        <label>Word to be converted:</label>
+                        <input type="text" id="nim" size="20">
+                        <input type="button" value="Show" onclick="nayta()">
+                    </form>
+                    <div id="vastau"></div>
+                    <script>
+                        function nayta() {
+                            var nim = document.getElementById("nim").value;
+                            var nimi2 = nim.toUpperCase();
+                            var nimi1 = nim.toLowerCase();
+                            var maara = nim.length;
+                            var eka = nim.charAt(0);
+                            var kolme = nim.substr(0, 3);
+                            document.getElementById("vastau").innerHTML = "Upper case: " + nimi2 + "<br>" + "Lower case: " + nimi1 + "<br>" +
+                                "Number of characters: " + maara + "<br>" + "First characters: " + eka + "<br>" + "First three characters: " + kolme;
+                        }
+                    </script>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">String converter</h5>
+                    <p class="card-text">Converts the given string to upper and lower case and gives first characters</p>
+                    <p class="card-text"><small class="text-muted">UpperCase, LowerCase, Lenght, charAt and substring</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="accordion">
+            <!--<div class="card" id="tietotekniikka">
+              <div class="card-header">
+                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                  Tietotekniikka
+                </a>
+              </div>
+              <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">Todistuksia tietoteknisestä osaamisestani</div>
+                    <div class="col">
+                        <a href="./kuvat/opintosuoritusote.png">
+                            <img src="./kuvat/opintosuoritusote.png" alt="Opintosuoritusote" border="1px solid #ddd" border-radius=" 4px"
+                                 padding="5px" width="150px">
+                        </a>
                     </div>
-                    <div class="column">
-                        <img src="./kuvat/ruusu.jpg" alt="Rose" id="shake" width="300" height="300">
-                    </div>
-                    <div class="column">
-                        <img src="./kuvat/voikukka.jpg" alt="Daffodil" id="shake" width="300" height="300">
-                    </div>
-                    <div class="column">
-                      <img src="./kuvat/gerbera.jpg" alt="gerbera" id="shake" width="300" height="300">
+                  </div>
+                </div>
+              </div>
+            </div>-->
+            <div class="card" id="valokuvaus">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Photography
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                I have practiced photography and here are few shots.
+                                The lion and leaves are pictured in Korkesaari, Spring in Ruoholahti
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Leijona.JPG">
+                                    <img src="./kuvat/Leijona.JPG" alt="Lion" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Jousi.JPG">
+                                    <img src="./kuvat/Jousi.JPG" alt="Spring" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Aamu.JPG">
+                                    <img src="./kuvat/Aamu.JPG" alt="Leaves" class="styled-image">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+            <div class="card" id="liikunta">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Athletics
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">
+                                Walking around Tuusula lake.
+                                Check also videos 2 and 3!
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Marssi.png">
+                                    <img src="./kuvat/Marssi.png" alt="Diploma of completion of Tuusula lake summernight march" class="styled-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="käsityöt">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                        Arts and crafts
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">Paper protorype and finished product of silver wolf pendant</div>
+                            <div class="col">
+                                <a href="./kuvat/Hopeasusi.JPG">
+                                    <img src="./kuvat/Hopeasusi.JPG" alt="Paper protorype for silver wolf pendant" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Hopeasusivalmis.jpg">
+                                    <img src="./kuvat/Hopeasusivalmis.jpg" alt="Silver wolf pendant" class="styled-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="kokkailu">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseFive">
+                        Restaurant business
+                    </a>
+                </div>
+                <div id="collapseFive" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">Some Halloween snap shots from my restaurant days</div>
+                            <div class="col">
+                                <a href="./kuvat/Kokki.JPG">
+                                    <img src="./kuvat/Kokki.JPG" alt="me in a chef uniform holding a knife" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Minions.JPG">
+                                    <img src="./kuvat/Minions.JPG" alt="cupcaces with minions decorations" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Kurpitsa1.JPG">
+                                    <img src="./kuvat/Kurpitsa1.JPG" alt="vomiting Halloween pumpkin" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Kurpitsa2.JPG">
+                                    <img src="./kuvat/Kurpitsa2.JPG" alt="Halloween pumpkin with cissors in the eye" class="styled-image">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="./kuvat/Kurpitsa3.JPG">
+                                    <img src="./kuvat/Kurpitsa3.JPG" alt="Halloween pumpkin with axe" class="styled-image">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="card" id="cv">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseSix">
+                        CV
+                    </a>
+                </div>
+                <div id="collapseSix" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col">Curriculum vitaeni</div>
+                            <div class="col"> <a href="./kuvat/CV.pdf"> <img src="./kuvat/CV.pdf" alt="curriculum vitae" width="150px"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+    <div>
+        <ul class="nav nav-tabs" id="videot">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Video 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1">Video 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2">Video 3</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active container-fluid" id="home">
+                <div class="video-container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QfySIkxdBDw"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container-fluid" id="menu1">
+                <div class="video-container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GnFizAtF2u4"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container-fluid" id="menu2">
+                <div class="video-container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h7DAVdr_cws"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container" id="Yhteystiedot">
+        <br>
+        <br>
+        <h2>Contact info</h2>
+        <p>Open for collaboration</p>
+        <a href="https://www.linkedin.com/in/marja-siniluoto/">LinkedIn</a>
+        <a href="https://www.instagram.com/the_siniluoto/">Instagram</a>
+        <table class="table-responsive table-striped">
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Email</th>
+                    <th>Puhelinnumero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Marja Siniluoto</td>
+                    <td>marja.k.siniluoto@gmail.com</td>
+                    <td>044-5 222 886</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--<h3>Lomake ei vielä lähde mihinkään, mutta se on muuten toimiva</h3>
+        <div class="container">
+            <div class="row">
+
+                <form class="form-inline" id="form" onsubmit="return false">
+                    <div class="col-sm-6">
+                        <label for="name">
+                            Nimi:<br>
+                            <input type="text" id="name" name="name" required>
+                        </label>
+                        <label for="email">Sähköposti: <br></label>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="tel">Puhelinnumero: </label><br>
+                        <input type="tel" id="tel" name="tel" placeholder="+358 11 1111 111" pattern="\+?[0-9 () \-]+" required><br><br>
+                        <label for="palaute">Palaute: <br></label><br>
+                        <textarea id="palaute" name="palaute" rows="4" cols="50" placeholder="Parasta tyyppi ikinä!"></textarea><br>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="radio">Arvio sivuistani: </label><br>
+                        <input type="radio" id="jee" name="arvio" value="jee">
+                        <label for="jee">Jee! </label><br>
+                        <input type="radio" id="buu" name="arvio" value="buu">
+                        <label for="buu">Buu! </label><br>
+                        <input type="radio" id="kehitys" name="arvio" value="kehitys">
+                        <label for="kehitys">Kehitettävää </label><br>
+                    </div>
+                    Mitä haluaisit lisää?
+                    <label>
+                        <input type="checkbox" id="kuvia" name="lisaa" value="kuvia"> kuvia
+                    </label>
+                    <label>
+                        <input type="checkbox" id="reseptejä" name="lisaa" value="pelejä"> pelejä
+                    </label>
+                    <label>
+                        <input type="checkbox" id="tietoa" name="lisaa" value="taustatietoa"> taustatietoa
+                    </label>
+
+
+                    <label for="etsinta">Löysitkö etsimäsi sivuiltamme? </label>
+                    <select name="etsinta" id="etsinta">
+                        <option value="kyllä">Kyllä </option>
+                        <option value="en">En </option>
+                        <option value="ehkä">Ehkä </option>
+                        <option value="kyllä ja ei">Kyllä ja ei </option>
+                    </select>
+                    <input class="button" type="submit" id="laheta" value="lähetä" onclick="tiedot()">
+                    <input class="button" type="reset" value="tyhjennä">
+                    <br>
+                    <br>
+                </form>
+                <div id="tuloste"></div>
+
+            </div>
+            <script type="text/Javascript">
+                function tiedot() {
+                    var nimi = document.getElementById("name").value;
+                    var email = document.getElementById("email").value;
+                    var tel = document.getElementById("tel").value;
+                    var palaute = document.getElementById("palaute").value;
+                    var muuttuja = "Arvio sivuistamme on ";
+                    var radios = document.getElementsByName("arvio");
+                    for (var i = 0, length = radios.length; i < length; i++) {
+                        if (radios[i].checked) {
+                            muuttuja = muuttuja + radios[i].value;
+                            break;
+                        }
+                    }
+                    var monivalinnat = "Näitä haluaisit lisää ";
+                    var boxit = document.getElementsByName("lisaa");
+                    for (var i = 0, length = boxit.length; i < length; i++) {
+                        if (boxit[i].checked) {
+                            monivalinnat = monivalinnat + " " + boxit[i].value;
+                        }
+                    }
+                    var valinta = "Löysitkö etsimäsi sivuiltamme ";
+                    var x = document.getElementById("etsinta").selectedIndex;
+                    var y = document.getElementById("etsinta").options;
+                    valinta = valinta + y[x].text;
+
+
+                    document.getElementById("tuloste").innerHTML = "Hei " + nimi + " kiitos palautteestasi." + "<br>" +
+                        "Sähköpostisi on " + email + " Puhelinnumerosi on " + tel + "<br>" + "Palautteesi on: " + palaute
+                        + "<br>" + muuttuja + "<br>" + monivalinnat + "<br>" + valinta;
+                }
+            </script>
+        </div>-->
+    </div>
+    <div id="loppudemot"></div>
+    <div class="container" id="naama">
+        <img src="./kuvat/Omakuva.jpg" alt="Self portrait" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">Me</div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="popup" style="font-size:30px;" onclick="myFunction()">
+            Click here for pop up!
+            <span class="popuptext" style="font-size:100px;" id="myPopup">&#127864</span>
+        </div>
+
+
+        <script>
+            // When the user clicks on div, open the popup
+            function myFunction() {
+                var popup = document.getElementById("myPopup");
+                popup.classList.toggle("show");
+            }
+        </script>
+        <h2>Shake the flowers</h2>
+        <div class="row">
+            <div class="column">
+                <img src="./kuvat/lilja.jpg" alt="Lily" id="shake" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="./kuvat/ruusu.jpg" alt="Rose" id="shake" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="./kuvat/voikukka.jpg" alt="Daffodil" id="shake" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="./kuvat/gerbera.jpg" alt="gerbera" id="shake" width="300" height="300">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
