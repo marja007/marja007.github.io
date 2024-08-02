@@ -76,14 +76,29 @@ h3{
 
 body { position: relative; 
 }
-/* Container for video player to center it and set a maximum width */
+/* Container for the tabs and video player */
+.video-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1000px; /* Maximum width for the video container */
+    margin: auto; /* Center the container */
+}
+
+/* Tabs container aligned to the left */
+.tabs-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Video player container centered */
 .video-container {
+    flex: 3;
     display: flex;
     justify-content: center; /* Center the video player horizontally */
     align-items: center; /* Center the video player vertically */
     width: 100%;
-    max-width: 1000px; /* Maximum width constraint */
-    margin: auto; /* Center the container */
 }
 
 /* Maintain the 16:9 aspect ratio for responsive video embedding */
@@ -107,16 +122,17 @@ body { position: relative;
     border: 0; /* Remove default border */
 }
 
-/* Center the tabs within the tab navigation */
-.nav-tabs {
-    justify-content: center; /* Center the tabs horizontally */
-}
-
-
 /* Styles for the tabs */
 .nav-tabs {
-    justify-content: center; /* Center the tabs */
+    justify-content: flex-start; /* Align tabs to the left */
+    margin-bottom: 0; /* Remove default bottom margin */
 }
+
+/* Align tabs and remove padding */
+.nav-item {
+    margin-bottom: 0; /* Remove bottom margin for each tab item */
+}
+
 
 /* Ensuring nav-tabs are aligned to the left */
 #videot .nav-tabs {
