@@ -104,7 +104,9 @@ body {
 }
 
 .video-container {
-    max-width: 1000px
+    max-width: 1000px;
+    justify-content: center; 
+    flex-wrap: wrap;
 }
 
 #videot .nav-link {
