@@ -99,7 +99,6 @@ body {
     justify-content: center;
     margin: auto;
     display: flex;
-    align-items: center;
 }
 
 /* Styling for active and inactive nav-link */
