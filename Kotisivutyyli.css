@@ -107,7 +107,7 @@ body {
     max-width: 1000px;
     justify-content: center; 
     flex-wrap: wrap;
-    position: relative;
+    position: center;
 }
 
 #videot .nav-link {
