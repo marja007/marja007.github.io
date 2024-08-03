@@ -95,10 +95,6 @@ body {
 .tab-content .container-fluid {
     padding-left: 0;
     padding-right: 0;
-    position: center;
-    justify-content: center;
-    margin: auto;
-    display: flex;
 }
 
 /* Styling for active and inactive nav-link */
