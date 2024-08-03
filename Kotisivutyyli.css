@@ -106,6 +106,8 @@ body {
 .video-container {
     max-width: 1000px;
     flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #videot .nav-link {
