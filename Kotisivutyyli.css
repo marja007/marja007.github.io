@@ -95,6 +95,11 @@ body {
 .tab-content .container-fluid {
     padding-left: 0;
     padding-right: 0;
+    position: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
 /* Styling for active and inactive nav-link */
@@ -105,9 +110,7 @@ body {
 
 .video-container {
     max-width: 1000px;
-    justify-content: center; 
     flex-wrap: wrap;
-    position: center;
 }
 
 #videot .nav-link {
